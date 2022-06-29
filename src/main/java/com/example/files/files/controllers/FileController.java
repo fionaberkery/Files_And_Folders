@@ -14,7 +14,7 @@ public class FileController {
     @Autowired
     FileRepository fileRepository;
 
-    @GetMapping(value = "/raids")
+    @GetMapping(value = "/files")
     public ResponseEntity<List<File>> getAllRaids(){
         return new ResponseEntity<>(fileRepository.findAll(), HttpStatus.OK);
     }
